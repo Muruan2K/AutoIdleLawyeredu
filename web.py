@@ -80,7 +80,7 @@ for i in range(1,len(table_rows)):
                 print("open play page successfully")
                 percent = driver.find_element_by_id("cpl")
                 print("Trying to tackle the exception")
-                print("该课程的完成百分比为：",percent)
+                print("This lesson's completion percentage is：",percent)
                 break
             except TimeoutException:
                 print("time out after 15 seconds when loading page")
@@ -90,6 +90,6 @@ for i in range(1,len(table_rows)):
                 a1 = Alert(driver)
                 a1.accept()
         break
-    else: print ("课程： " ,table_rows[i].find_elements_by_tag_name('td')[0].text , " 已学习完毕")
-print ("所有课程学习完毕。")
+    else: print ("Lesson： " ,table_rows[i].find_elements_by_tag_name('td')[0].text , " 已学习完毕")
+print ("All lessons are finished")
 #driver.save_screenshot('picture4.png')
