@@ -90,6 +90,6 @@ for i in range(1,len(table_rows)):
                 a1 = Alert(driver)
                 a1.accept()
         break
-    else: print ("Lesson： " ,table_rows[i].find_elements_by_tag_name('td')[0].text , " 已学习完毕")
+    else: print ("Lesson： " ,table_rows[i].find_elements_by_tag_name('td')[0].text , " is completed")
 print ("All lessons are finished")
 #driver.save_screenshot('picture4.png')
